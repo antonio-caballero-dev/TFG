@@ -131,20 +131,21 @@ La siguiente figura muestra la diferencia entre el árbol filogenético original
 
 
 <p align="center">
-    <img src="pictures/arboles_verdad/M12x252.png" alt="Árbol verdad" width="240"/>
+    <img src="pictures/arboles_verdad/M12x252.png" alt="Árbol verdad" width="290"/>
     <br><sub>Árbol original (realidad)</sub>
 </p>
 <p align="center">
-    <img src="pictures/arboles_verdad/M12x252_30_1_de_5_KNNImputer.png" alt="Árbol KNNImputer" width="240"/>
+    <img src="pictures/arboles_verdad/M12x252_30_1_de_5_KNNImputer.png" alt="Árbol KNNImputer" width="290"/>
     <br><sub>Imputación KNNImputer sobre una muestra con 30% de pérdida. NRF:0.11</sub>
 </p>
 <p align="center">
-    <img src="pictures/arboles_verdad/M12x252_30_1_de_5_DAMBE.png" alt="Árbol DAMBE" width="240"/>
+    <img src="pictures/arboles_verdad/M12x252_30_1_de_5_DAMBE.png" alt="Árbol DAMBE" width="290"/>
     <br><sub>DAMBE (sin imputación) sobre una muestra con 30% de pérdida. NRF:0.55</sub>
 </p>
 
 
-
+## Conclusión
+El estudio demuestra que la imputación de datos perdidos en secuencias biológicas mediante técnicas de Machine Learning puede mejorar significativamente la calidad de los árboles filogenéticos resultantes. Métodos como KNNImputer y IterativeImputer con BayesianRidge ofrecen un equilibrio favorable entre precisión y tiempo de ejecución, superando a enfoques tradicionales como DAMBE que no aplican imputación específica. Estos hallazgos resaltan la importancia de abordar los datos faltantes en análisis filogenéticos para obtener inferencias evolutivas más robustas y fiables.
 
 ---
 
