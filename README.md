@@ -131,16 +131,16 @@ La siguiente figura muestra la diferencia entre el árbol filogenético original
 
 
 <p align="center">
-    <img src="pictures/arboles_verdad/M12x252.png" alt="Árbol verdad" width="140"/>
+    <img src="pictures/arboles_verdad/M12x252.png" alt="Árbol verdad" width="240"/>
     <br><sub>Árbol original (realidad)</sub>
 </p>
 <p align="center">
-    <img src="pictures/arboles_verdad/M12x252_30_1_de_5_KNNImputer.png" alt="Árbol KNNImputer" width="140"/>
-    <br><sub>Imputación KNNImputer sobre una muestra con 30% de pérdida</sub>
+    <img src="pictures/arboles_verdad/M12x252_30_1_de_5_KNNImputer.png" alt="Árbol KNNImputer" width="240"/>
+    <br><sub>Imputación KNNImputer sobre una muestra con 30% de pérdida. NRF:0.11</sub>
 </p>
 <p align="center">
-    <img src="pictures/arboles_verdad/M12x252_30_1_de_5_DAMBE.png" alt="Árbol DAMBE" width="140"/>
-    <br><sub>DAMBE (sin imputación) sobre una muestra con 30% de pérdida</sub>
+    <img src="pictures/arboles_verdad/M12x252_30_1_de_5_DAMBE.png" alt="Árbol DAMBE" width="240"/>
+    <br><sub>DAMBE (sin imputación) sobre una muestra con 30% de pérdida. NRF:0.55</sub>
 </p>
 
 
