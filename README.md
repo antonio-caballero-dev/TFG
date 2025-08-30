@@ -9,7 +9,7 @@
         </h1>
     </div>
     <div style="flex: 0 0 auto; margin-left: 36px;">
-        <img src="pictures/logos/logouex_transp.png" alt="Logo TFG" width="120" style="display: block;"/>
+        <img src="pictures/logos/logouex_transp.png" alt="Logo TFG" width="60" style="display: block;"/>
     </div>
 </div>
 
@@ -121,21 +121,18 @@
 
 <sub>Valores en segundos. La columna "Pérdida" indica el incremento porcentual respecto al mejor método (KNNImputer).</sub>
 
+
 <details>
 <summary><b>ℹ️ Detalles sobre la métrica Robinson-Foulds y resultados paralelos</b></summary>
 
-<p>La métrica Robinson-Foulds normalizada (NRF) mide cuán diferentes son dos árboles filogenéticos. Un valor más bajo indica que los árboles son más parecidos. La fórmula es:</p>
-<p align="center">
-    <img src="https://latex.codecogs.com/svg.image?\dpi{120}&space;\large&space;\textit{NRF}&space;=&space;\frac{\textit{Robinson\text{-}Foulds}}{\textit{Robinson\text{-}Foulds}_{\max}}" alt="NRF = Robinson-Foulds / Robinson-Foulds_max"/>
-</p>
+<p><b>Métrica Robinson-Foulds (NRF):</b> La calidad de los árboles filogenéticos estimados se evalúa mediante la distancia de Robinson-Foulds (RF), que mide la diferencia topológica entre dos árboles. Un valor más bajo indica mayor similitud entre el árbol estimado y el árbol de referencia. Para facilitar la comparación, los valores RF se han normalizado (NRF) dividiendo por el máximo posible para cada caso:</p>
 
-<p>Para más detalles sobre esta métrica y los resultados en modo paralelo, consulta la documentación del TFG.</p>
+<pre>NRF = Robinson-Foulds / Robinson-Foulds<sub>max</sub></pre>
 
-</details>
+<p><b>Referencia:</b> D. Robinson & L. Foulds, "Comparison of phylogenetic trees", Mathematical Biosciences, 53(1-2):131-147, 1981.</p>
 
-<details>
-<summary><b>ℹ️ Nota sobre resultados paralelos</b></summary>
-Además de los resultados secuenciales mostrados, se han obtenido resultados en modo paralelo (multi-hilo) para evaluar la escalabilidad y eficiencia computacional de los métodos. Estos resultados no se incluyen aquí por motivos de espacio, pero están disponibles en la documentación del TFG.
+<p><b>Nota sobre resultados paralelos:</b> Además de los resultados secuenciales mostrados, se han obtenido resultados en modo paralelo (multi-hilo) para evaluar la escalabilidad y eficiencia computacional de los métodos. Estos resultados no se incluyen aquí por motivos de espacio, pero están disponibles bajo petición o en los anexos del trabajo.</p>
+
 </details>
 
 
