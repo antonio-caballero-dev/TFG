@@ -9,7 +9,7 @@
 ### ¿Por qué es importante la imputación de datos en filogenia?
 
 <div style="display: flex; align-items: flex-start; gap: 24px;">
-    <img src="pictures/filogenetica/art_5_2.jpg" alt="Filogenia" style="max-width: 180px; height: auto; margin-right: 16px;"/>
+    <img src="pictures/filogenetica/art_5_2.jpg" alt="Filogenia" style="max-width: 120px; height: auto; margin-right: 16px;"/>
     <div>
         Los análisis computacionales en filogenia dependen de secuencias de ADN completas para reconstruir relaciones evolutivas entre organismos. Sin embargo, es frecuente que las matrices de datos contengan posiciones faltantes (<em>missing data</em>), lo que reduce la calidad de los árboles filogenéticos y afecta la robustez de las inferencias evolutivas.<br><br>
         <strong>Objetivo:</strong> Aplicar técnicas de Machine Learning para imputar o predecir los valores faltantes en las secuencias biológicas, mejorando así la integridad y calidad de los análisis filogenéticos.
@@ -118,9 +118,8 @@ Para abordar el problema de los datos ausentes, se han implementado y comparado 
 
 <pre>NRF = Robinson-Foulds / Robinson-Foulds<sub>max</sub></pre>
 
-<p><b>Referencia:</b> D. Robinson & L. Foulds, "Comparison of phylogenetic trees", Mathematical Biosciences, 53(1-2):131-147, 1981.</p>
 
-<p><b>Nota sobre resultados paralelos:</b> Además de los resultados secuenciales mostrados, se han obtenido resultados en modo paralelo (multi-hilo) para evaluar la escalabilidad y eficiencia computacional de los métodos. Estos resultados no se incluyen aquí por motivos de espacio, pero están disponibles bajo petición o en los anexos del trabajo.</p>
+<p><b>Nota sobre resultados paralelos:</b> Además de los resultados secuenciales mostrados, se han obtenido resultados en modo paralelo (multiprocessing) para evaluar la escalabilidad y eficiencia computacional de los métodos. Estos resultados no se incluyen aquí por motivos de espacio, pero están disponibles bajo petición o en los anexos del trabajo.</p>
 
 </details>
 
@@ -130,20 +129,16 @@ Para abordar el problema de los datos ausentes, se han implementado y comparado 
 
 La siguiente figura muestra la diferencia entre el árbol filogenético original (verdad), el obtenido tras imputar con KNNImputer y el obtenido con DAMBE (sin imputación específica). Se observa cómo una imputación adecuada permite recuperar una topología mucho más cercana a la realidad biológica.
 
-<div align="center" style="margin-top: 24px; margin-bottom: 12px;">
-	<figure style="display: inline-block; margin: 0 32px;">
-		<img src="pictures/arboles_verdad/M12x252.png" alt="Árbol verdad" width="340" style="display: block; margin-bottom: 8px;"/>
-		<figcaption style="text-align: center; font-size: 1em; margin-top: 4px;">Árbol original (realidad)</figcaption>
-	</figure>
-	<figure style="display: inline-block; margin: 0 32px;">
-		<img src="pictures/arboles_verdad/M12x252_30_1_de_5_KNNImputer.png" alt="Árbol KNNImputer" width="340" style="display: block; margin-bottom: 8px;"/>
-		<figcaption style="text-align: center; font-size: 1em; margin-top: 4px;">Imputación KNNImputer sobre una muestra con 30% de pérdida</figcaption>
-	</figure>
-	<figure style="display: inline-block; margin: 0 32px;">
-		<img src="pictures/arboles_verdad/M12x252_30_1_de_5_DAMBE.png" alt="Árbol DAMBE" width="340" style="display: block; margin-bottom: 8px;"/>
-		<figcaption style="text-align: center; font-size: 1em; margin-top: 4px;">DAMBE (sin imputación) sobre una muestra con 30% de pérdida</figcaption>
-	</figure>
-</div>
+
+
+![Árbol verdad](pictures/arboles_verdad/M12x252.png)
+<sub>Árbol original (realidad)</sub>
+
+![Árbol KNNImputer](pictures/arboles_verdad/M12x252_30_1_de_5_KNNImputer.png)
+<sub>Imputación KNNImputer sobre una muestra con 30% de pérdida</sub>
+
+![Árbol DAMBE](pictures/arboles_verdad/M12x252_30_1_de_5_DAMBE.png)
+<sub>DAMBE (sin imputación) sobre una muestra con 30% de pérdida</sub>
 
 
 ---
