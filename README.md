@@ -149,6 +149,13 @@ El estudio demuestra que la imputación de datos perdidos en secuencias biológi
 
 ---
 
+## 📄 Documentación
+
+Puedes consultar el documento oficial del TFG en el siguiente enlace:  
+[Descargar TFG (PDF)](https://drive.google.com/file/d/1bYnwP0hjTU9AiCWYofYuEF44Rzn2_Mo0/view?usp=drive_link)
+
+---
+
 ## 📚 Referencias
 
 <ul style="font-size:1.05em; line-height:1.7; text-align:left; max-width:900px;">
