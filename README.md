@@ -1,15 +1,15 @@
 
 
-<div style="display: flex; align-items: center; justify-content: center; margin-bottom: 2em;">
-    <div style="flex: 0 0 auto; margin-right: 36px;">
-        <img src="pictures/logos/logouex_transp.png" alt="Logo TFG" width="60" style="display: block;"/>
-    </div>
-    <div style="flex: 1;">
-        <h1 style="font-size: 2.6em; margin-bottom: 0.2em; line-height: 1.15;">
-            <b>Estudio de técnicas de Machine Learning para imputar datos perdidos<br>
-            en secuencias biológicas</b>
-        </h1>
-    </div>
+<div style="display: flex; align-items: center; justify-content: center; margin-bottom: 1em;">
+	<div style="flex: 0 0 auto; margin-right: 18px;">
+		<img src="pictures/logos/logouex_transp.png" alt="Logo TFG" width="36" style="display: block;"/>
+	</div>
+	<div style="flex: 1;">
+		<h1 style="font-size: 1.05em; margin-bottom: 0.1em; line-height: 1.15;">
+			<b>Estudio de técnicas de Machine Learning para imputar datos perdidos<br>
+			en secuencias biológicas</b>
+		</h1>
+	</div>
 </div>
 
 
@@ -17,24 +17,24 @@
 
 --- 
 
-<div align="center" style="margin-bottom: 1.5em;">
-	<h1 style="margin-bottom: 0.3em;">🧩 El Problema</h1>
-	<h2 style="margin-bottom: 1.2em; font-weight: 400; color: #444;">¿Por qué es importante la imputación de datos en filogenia?</h2>
-	<div style="display: flex; align-items: flex-start; justify-content: center; max-width: 1100px; margin: 0 auto 2em auto;">
-		<img src="pictures/filogenetica/art_5_2.jpg" alt="Filogenia" width="170" style="margin-right: 32px;"/>
-		<p style="font-size: 1.13em; text-align: justify; margin: 0; max-width: 700px;">
+<div align="center" style="margin-bottom: 0.7em;">
+	<h1 style="margin-bottom: 0.15em; font-size:1.1em;">🧩 El Problema</h1>
+	<h2 style="margin-bottom: 0.5em; font-weight: 400; color: #444; font-size:1em;">¿Por qué es importante la imputación de datos en filogenia?</h2>
+	<div style="display: flex; align-items: flex-start; justify-content: center; max-width: 700px; margin: 0 auto 1em auto;">
+		<img src="pictures/filogenetica/art_5_2.jpg" alt="Filogenia" width="90" style="margin-right: 14px;"/>
+		<p style="font-size: 0.95em; text-align: justify; margin: 0; max-width: 350px;">
 			Los análisis computacionales en filogenia dependen de secuencias de ADN completas para reconstruir relaciones evolutivas entre organismos. Sin embargo, es frecuente que las matrices de datos contengan posiciones faltantes (<i>missing data</i>), lo que reduce la calidad de los árboles filogenéticos y afecta la robustez de las inferencias evolutivas.<br><br>
 			<b>Objetivo:</b> Aplicar técnicas de Machine Learning para imputar o predecir los valores faltantes en las secuencias biológicas, mejorando así la integridad y calidad de los análisis filogenéticos.
 		</p>
 	</div>
-	<div style="margin-top: 2em; margin-bottom: 2em;">
-		<figure style="display: inline-block; margin: 0 32px;">
-			<img src="pictures/secuencias_seaview/m12_verdad.png" alt="Secuencia completa del conjunto M12x252" width="290" style="display: block; margin-bottom: 8px; border-radius: 8px; box-shadow: 0 2px 8px #0001;"/>
-			<figcaption style="text-align: center; font-size: 1em; margin-top: 4px; color: #444;">Secuencia completa (sin datos perdidos)</figcaption>
+	<div style="margin-top: 1em; margin-bottom: 1em;">
+		<figure style="display: inline-block; margin: 0 10px;">
+			<img src="pictures/secuencias_seaview/m12_verdad.png" alt="Secuencia completa del conjunto M12x252" width="140" style="display: block; margin-bottom: 4px; border-radius: 6px; box-shadow: 0 1px 4px #0001;"/>
+			<figcaption style="text-align: center; font-size: 0.85em; margin-top: 2px; color: #444;">Secuencia completa (sin datos perdidos)</figcaption>
 		</figure>
-		<figure style="display: inline-block; margin: 0 32px;">
-			<img src="pictures/secuencias_seaview/m12_con_35_perdida_1_de_5.png" alt="Secuencia con 35% de pérdida del conjunto M12x252" width="290" style="display: block; margin-bottom: 8px; border-radius: 8px; box-shadow: 0 2px 8px #0001;"/>
-			<figcaption style="text-align: center; font-size: 1em; margin-top: 4px; color: #444;">Secuencia con 35% de datos perdidos</figcaption>
+		<figure style="display: inline-block; margin: 0 10px;">
+			<img src="pictures/secuencias_seaview/m12_con_35_perdida_1_de_5.png" alt="Secuencia con 35% de pérdida del conjunto M12x252" width="140" style="display: block; margin-bottom: 4px; border-radius: 6px; box-shadow: 0 1px 4px #0001;"/>
+			<figcaption style="text-align: center; font-size: 0.85em; margin-top: 2px; color: #444;">Secuencia con 35% de datos perdidos</figcaption>
 		</figure>
 	</div>
 </div>
@@ -55,28 +55,28 @@
 
 # 🛠️ Enfoque y Métodos
 
-<div style="margin-bottom: 1.2em;">
-    <img src="pictures/logos/Python-logo-notext.svg.png" alt="Python" height="38" style="vertical-align:middle; margin-right:18px;"/>
-    <img src="pictures/logos/Scikit_learn_logo_small.svg.png" alt="Scikit-learn" height="38" style="vertical-align:middle; margin-right:18px;"/>
-    <img src="pictures/logos/numpy-1-1-.png" alt="Numpy" height="38" style="vertical-align:middle; margin-right:18px;"/>
-    <img src="pictures/logos/Biopython_logo.svg.png" alt="BioPython" height="38" style="vertical-align:middle; margin-right:18px;"/>
-    <img src="pictures/logos/ETElogo.250x78.jpeg" alt="Ete3" height="38" style="vertical-align:middle;"/>
+<div style="margin-bottom: 0.5em;">
+	<img src="pictures/logos/Python-logo-notext.svg.png" alt="Python" height="22" style="vertical-align:middle; margin-right:8px;"/>
+	<img src="pictures/logos/Scikit_learn_logo_small.svg.png" alt="Scikit-learn" height="22" style="vertical-align:middle; margin-right:8px;"/>
+	<img src="pictures/logos/numpy-1-1-.png" alt="Numpy" height="22" style="vertical-align:middle; margin-right:8px;"/>
+	<img src="pictures/logos/Biopython_logo.svg.png" alt="BioPython" height="22" style="vertical-align:middle; margin-right:8px;"/>
+	<img src="pictures/logos/ETElogo.250x78.jpeg" alt="Ete3" height="22" style="vertical-align:middle;"/>
 </div>
 
 </div>
 
-<div style="font-size:1.1em; max-width: 900px; margin: 0 0 1.2em 0;">
-    Para abordar el problema de los datos ausentes, se han implementado y comparado diferentes técnicas de imputación y reconstrucción filogenética.
+<div style="font-size:0.97em; max-width: 600px; margin: 0 0 0.7em 0;">
+	Para abordar el problema de los datos ausentes, se han implementado y comparado diferentes técnicas de imputación y reconstrucción filogenética.
 </div>
 
-<ul style="max-width: 700px; margin-left: 0;">
-    <li><b>SimpleImputer</b></li>
-    <li><b>LinearSVR</b></li>
-    <li><b>BayesianRidge</b></li>
-    <li><b>GaussianProcessRegressor</b></li>
-    <li><b>KNeighborsRegressor</b></li>
-    <li><b>KNNImputer</b></li>
-    <li><b>DAMBE - MLCompositeTN93</b> (software filogenético, sin imputación)</li>
+<ul style="max-width: 400px; margin-left: 0; font-size:0.95em;">
+	<li><b>SimpleImputer</b></li>
+	<li><b>LinearSVR</b></li>
+	<li><b>BayesianRidge</b></li>
+	<li><b>GaussianProcessRegressor</b></li>
+	<li><b>KNeighborsRegressor</b></li>
+	<li><b>KNNImputer</b></li>
+	<li><b>DAMBE - MLCompositeTN93</b> (software filogenético, sin imputación)</li>
 </ul>
 
 ---
@@ -169,9 +169,6 @@ Además de los resultados secuenciales mostrados, se han obtenido resultados en 
 </details>
 
 
-<p align="center">
-	<sub>Trabajo Fin de Grado · Antonio Caballero · 2025</sub>
-</p>
 
 
 ---
