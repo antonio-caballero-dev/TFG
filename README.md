@@ -1,15 +1,14 @@
 
 
-
 <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 2em;">
+    <div style="flex: 0 0 auto; margin-right: 36px;">
+        <img src="pictures/logos/logouex_transp.png" alt="Logo TFG" width="60" style="display: block;"/>
+    </div>
     <div style="flex: 1;">
         <h1 style="font-size: 2.6em; margin-bottom: 0.2em; line-height: 1.15;">
             <b>Estudio de técnicas de Machine Learning para imputar datos perdidos<br>
             en secuencias biológicas</b>
         </h1>
-    </div>
-    <div style="flex: 0 0 auto; margin-left: 36px;">
-        <img src="pictures/logos/logouex_transp.png" alt="Logo TFG" width="60" style="display: block;"/>
     </div>
 </div>
 
@@ -22,7 +21,7 @@
 	<h1 style="margin-bottom: 0.3em;">🧩 El Problema</h1>
 	<h2 style="margin-bottom: 1.2em; font-weight: 400; color: #444;">¿Por qué es importante la imputación de datos en filogenia?</h2>
 	<div style="display: flex; align-items: flex-start; justify-content: center; max-width: 1100px; margin: 0 auto 2em auto;">
-		<img src="pictures/filogenetica/art_5_2.jpg" alt="Filogenia" width="270" style="margin-right: 32px;"/>
+		<img src="pictures/filogenetica/art_5_2.jpg" alt="Filogenia" width="170" style="margin-right: 32px;"/>
 		<p style="font-size: 1.13em; text-align: justify; margin: 0; max-width: 700px;">
 			Los análisis computacionales en filogenia dependen de secuencias de ADN completas para reconstruir relaciones evolutivas entre organismos. Sin embargo, es frecuente que las matrices de datos contengan posiciones faltantes (<i>missing data</i>), lo que reduce la calidad de los árboles filogenéticos y afecta la robustez de las inferencias evolutivas.<br><br>
 			<b>Objetivo:</b> Aplicar técnicas de Machine Learning para imputar o predecir los valores faltantes en las secuencias biológicas, mejorando así la integridad y calidad de los análisis filogenéticos.
@@ -30,11 +29,11 @@
 	</div>
 	<div style="margin-top: 2em; margin-bottom: 2em;">
 		<figure style="display: inline-block; margin: 0 32px;">
-			<img src="pictures/secuencias_seaview/m12_verdad.png" alt="Secuencia completa del conjunto M12x252" width="490" style="display: block; margin-bottom: 8px; border-radius: 8px; box-shadow: 0 2px 8px #0001;"/>
+			<img src="pictures/secuencias_seaview/m12_verdad.png" alt="Secuencia completa del conjunto M12x252" width="290" style="display: block; margin-bottom: 8px; border-radius: 8px; box-shadow: 0 2px 8px #0001;"/>
 			<figcaption style="text-align: center; font-size: 1em; margin-top: 4px; color: #444;">Secuencia completa (sin datos perdidos)</figcaption>
 		</figure>
 		<figure style="display: inline-block; margin: 0 32px;">
-			<img src="pictures/secuencias_seaview/m12_con_35_perdida_1_de_5.png" alt="Secuencia con 35% de pérdida del conjunto M12x252" width="490" style="display: block; margin-bottom: 8px; border-radius: 8px; box-shadow: 0 2px 8px #0001;"/>
+			<img src="pictures/secuencias_seaview/m12_con_35_perdida_1_de_5.png" alt="Secuencia con 35% de pérdida del conjunto M12x252" width="290" style="display: block; margin-bottom: 8px; border-radius: 8px; box-shadow: 0 2px 8px #0001;"/>
 			<figcaption style="text-align: center; font-size: 1em; margin-top: 4px; color: #444;">Secuencia con 35% de datos perdidos</figcaption>
 		</figure>
 	</div>
@@ -52,34 +51,33 @@
 </details>
 
 ---
-
-
 <div align="center">
-	<h1 style="margin-bottom: 0.5em;">🛠️ Enfoque y Métodos</h1>
-	<p style="font-size:1.1em; max-width: 900px; margin: 0 auto 1.2em auto;">
-		Para abordar el problema de los datos ausentes, se han implementado y comparado diferentes técnicas de imputación y reconstrucción filogenética.
-	</p>
-	<div style="margin-bottom: 1.2em;">
-		<img src="https://img.shields.io/badge/Machine%20Learning-Bioinform%C3%A1tica-blue?style=for-the-badge" alt="ML Bioinfo"/>
-		<img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
-		<img src="https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit-learn"/>
-		<img src="https://img.shields.io/badge/Numpy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="Numpy"/>
-		<img src="https://img.shields.io/badge/BioPython-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="BioPython"/>
-		<img src="https://img.shields.io/badge/Ete3-4E9A06?style=for-the-badge" alt="Ete3"/>
-	</div>
-	<ul style="display: inline-block; text-align: left; font-size: 1.08em; line-height: 1.7; margin: 0 auto 1.2em auto; padding-left: 0; list-style: none;">
-		<li>🔹 <b>SimpleImputer</b></li>
-		<li>🔹 <b>LinearSVR</b></li>
-		<li>🔹 <b>BayesianRidge</b></li>
-		<li>🔹 <b>GaussianProcessRegressor</b></li>
-		<li>🔹 <b>KNeighborsRegressor</b></li>
-		<li>🔹 <b>KNNImputer</b></li>
-		<li>🔹 <b>DAMBE - MLCompositeTN93</b> <span style="font-size:0.95em; color:#888;">(software especializado en filogenia, sin imputación)</span></li>
-	</ul>
+
+# 🛠️ Enfoque y Métodos
+
+<div style="margin-bottom: 1.2em;">
+    <img src="pictures/logos/Python-logo-notext.svg.png" alt="Python" height="38" style="vertical-align:middle; margin-right:18px;"/>
+    <img src="pictures/logos/Scikit_learn_logo_small.svg.png" alt="Scikit-learn" height="38" style="vertical-align:middle; margin-right:18px;"/>
+    <img src="pictures/logos/numpy-1-1-.png" alt="Numpy" height="38" style="vertical-align:middle; margin-right:18px;"/>
+    <img src="pictures/logos/Biopython_logo.svg.png" alt="BioPython" height="38" style="vertical-align:middle; margin-right:18px;"/>
+    <img src="pictures/logos/ETElogo.250x78.jpeg" alt="Ete3" height="38" style="vertical-align:middle;"/>
+</div>
 
 </div>
 
+<div style="font-size:1.1em; max-width: 900px; margin: 0 0 1.2em 0;">
+    Para abordar el problema de los datos ausentes, se han implementado y comparado diferentes técnicas de imputación y reconstrucción filogenética.
+</div>
 
+<ul style="max-width: 700px; margin-left: 0;">
+    <li><b>SimpleImputer</b></li>
+    <li><b>LinearSVR</b></li>
+    <li><b>BayesianRidge</b></li>
+    <li><b>GaussianProcessRegressor</b></li>
+    <li><b>KNeighborsRegressor</b></li>
+    <li><b>KNNImputer</b></li>
+    <li><b>DAMBE - MLCompositeTN93</b> (software filogenético, sin imputación)</li>
+</ul>
 
 ---
 
