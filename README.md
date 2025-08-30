@@ -1,21 +1,7 @@
 
 
-<div style="display: flex; align-items: center; justify-content: center; margin-bottom: 1em;">
-	<div style="flex: 0 0 auto; margin-right: 18px;">
-		<img src="pictures/logos/logouex_transp.png" alt="Logo TFG" width="36" style="display: block;"/>
-	</div>
-	<div style="flex: 1;">
-		<h1 style="font-size: 1.05em; margin-bottom: 0.1em; line-height: 1.15;">
-			<b>Estudio de técnicas de Machine Learning para imputar datos perdidos<br>
-			en secuencias biológicas</b>
-		</h1>
-	</div>
-</div>
+# TFG - Estudio de técnicas de Machine Learning para imputar datos perdidos en secuencias biológicas
 
-
-
-
---- 
 
 <div align="center" style="margin-bottom: 0.7em;">
 	<h1 style="margin-bottom: 0.15em; font-size:1.1em;">🧩 El Problema</h1>
