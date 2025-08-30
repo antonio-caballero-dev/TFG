@@ -129,16 +129,20 @@ Para abordar el problema de los datos ausentes, se han implementado y comparado 
 
 La siguiente figura muestra la diferencia entre el árbol filogenético original (verdad), el obtenido tras imputar con KNNImputer y el obtenido con DAMBE (sin imputación específica). Se observa cómo una imputación adecuada permite recuperar una topología mucho más cercana a la realidad biológica.
 
-
-
-![Árbol verdad](pictures/arboles_verdad/M12x252.png)
-<sub>Árbol original (realidad)</sub>
-
-![Árbol KNNImputer](pictures/arboles_verdad/M12x252_30_1_de_5_KNNImputer.png)
-<sub>Imputación KNNImputer sobre una muestra con 30% de pérdida</sub>
-
-![Árbol DAMBE](pictures/arboles_verdad/M12x252_30_1_de_5_DAMBE.png)
-<sub>DAMBE (sin imputación) sobre una muestra con 30% de pérdida</sub>
+<div align="center" style="margin-top: 24px; margin-bottom: 12px;">
+	<figure style="display: inline-block; margin: 0 32px;">
+		<img src="pictures/arboles_verdad/M12x252.png" alt="Árbol verdad" width="140" style="display: block; margin-bottom: 8px;"/>
+		<figcaption style="text-align: center; font-size: 1em; margin-top: 4px;">Árbol original (realidad)</figcaption>
+	</figure>
+	<figure style="display: inline-block; margin: 0 32px;">
+		<img src="pictures/arboles_verdad/M12x252_30_1_de_5_KNNImputer.png" alt="Árbol KNNImputer" width="140" style="display: block; margin-bottom: 8px;"/>
+		<figcaption style="text-align: center; font-size: 1em; margin-top: 4px;">Imputación KNNImputer sobre una muestra con 30% de pérdida</figcaption>
+	</figure>
+	<figure style="display: inline-block; margin: 0 32px;">
+		<img src="pictures/arboles_verdad/M12x252_30_1_de_5_DAMBE.png" alt="Árbol DAMBE" width="140" style="display: block; margin-bottom: 8px;"/>
+		<figcaption style="text-align: center; font-size: 1em; margin-top: 4px;">DAMBE (sin imputación) sobre una muestra con 30% de pérdida</figcaption>
+	</figure>
+</div>
 
 
 ---
