@@ -115,8 +115,18 @@ Para abordar el problema de los datos ausentes, se han implementado y comparado 
 <summary><b>ℹ️ Detalles sobre la métrica Robinson-Foulds y resultados paralelos</b></summary>
 
 <p><b>Métrica Robinson-Foulds (NRF):</b> La calidad de los árboles filogenéticos estimados se evalúa mediante la distancia de Robinson-Foulds (RF), que mide la diferencia topológica entre dos árboles. Un valor más bajo indica mayor similitud entre el árbol estimado y el árbol de referencia. Para facilitar la comparación, los valores RF se han normalizado (NRF) dividiendo por el máximo posible para cada caso:</p>
+<div align="center" style="margin: 18px 0;">
+  
+  <img src="https://latex.codecogs.com/svg.image?NRF%20%3D%20%5Cdfrac%7B%5Ctext%7BRobinson-Foulds%7D%7D%7B%5Ctext%7BRobinson-Foulds%7D_%7B%5Cmax%7D%7D" alt="NRF formula" style="height:48px; margin-bottom: 8px;"/>
 
-<pre>NRF = Robinson-Foulds / Robinson-Foulds<sub>max</sub></pre>
+  <br>
+  
+  <br>
+  <span style="color:#555; font-size:0.98em;">
+    <i>NRF (Normalized Robinson-Foulds)</i> 
+    Valores más bajos indican mayor similitud entre el árbol estimado y el árbol de referencia: <b>NRF = 0</b> significa árboles idénticos, <b>NRF = 1</b> significa árboles completamente distintos.
+  </span>
+</div>
 
 
 <p><b>Nota sobre resultados paralelos:</b> Además de los resultados secuenciales mostrados, se han obtenido resultados en modo paralelo (multiprocessing) para evaluar la escalabilidad y eficiencia computacional de los métodos. Estos resultados no se incluyen aquí por motivos de espacio, pero están disponibles bajo petición o en los anexos del trabajo.</p>
