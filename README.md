@@ -130,33 +130,19 @@ Para abordar el problema de los datos ausentes, se han implementado y comparado 
 La siguiente figura muestra la diferencia entre el árbol filogenético original (verdad), el obtenido tras imputar con KNNImputer y el obtenido con DAMBE (sin imputación específica). Se observa cómo una imputación adecuada permite recuperar una topología mucho más cercana a la realidad biológica.
 
 <div align="center" style="margin-top: 24px; margin-bottom: 12px;">
-	<figure style="display: inline-block; margin: 0 32px;">
-		<img src="pictures/arboles_verdad/M12x252.png" alt="Árbol verdad" width="140" style="display: block; margin-bottom: 8px;"/>
-		<figcaption style="text-align: center; font-size: 1em; margin-top: 4px;">Árbol original (realidad)</figcaption>
-	</figure>
-	<figure style="display: inline-block; margin: 0 32px;">
-		<img src="pictures/arboles_verdad/M12x252_30_1_de_5_KNNImputer.png" alt="Árbol KNNImputer" width="140" style="display: block; margin-bottom: 8px;"/>
-		<figcaption style="text-align: center; font-size: 1em; margin-top: 4px;">Imputación KNNImputer sobre una muestra con 30% de pérdida</figcaption>
-	</figure>
-	<figure style="display: inline-block; margin: 0 32px;">
-		<img src="pictures/arboles_verdad/M12x252_30_1_de_5_DAMBE.png" alt="Árbol DAMBE" width="140" style="display: block; margin-bottom: 8px;"/>
-		<figcaption style="text-align: center; font-size: 1em; margin-top: 4px;">DAMBE (sin imputación) sobre una muestra con 30% de pérdida</figcaption>
-	</figure>
+    <figure style="margin-bottom: 24px;">
+        <img src="pictures/arboles_verdad/M12x252.png" alt="Árbol verdad" width="180" style="display: block; margin: 0 auto 8px;"/>
+        <figcaption style="text-align: center; font-size: 1em; margin-top: 4px;">Árbol original (realidad)</figcaption>
+    </figure>
+    <figure style="margin-bottom: 24px;">
+        <img src="pictures/arboles_verdad/M12x252_30_1_de_5_KNNImputer.png" alt="Árbol KNNImputer" width="180" style="display: block; margin: 0 auto 8px;"/>
+        <figcaption style="text-align: center; font-size: 1em; margin-top: 4px;">Imputación KNNImputer sobre una muestra con 30% de pérdida</figcaption>
+    </figure>
+    <figure>
+        <img src="pictures/arboles_verdad/M12x252_30_1_de_5_DAMBE.png" alt="Árbol DAMBE" width="180" style="display: block; margin: 0 auto 8px;"/>
+        <figcaption style="text-align: center; font-size: 1em; margin-top: 4px;">DAMBE (sin imputación) sobre una muestra con 30% de pérdida</figcaption>
+    </figure>
 </div>
-
-
----
-
-### Detalles sobre la métrica Robinson-Foulds y resultados paralelos
-
-La calidad de los árboles filogenéticos estimados se evalúa mediante la distancia de Robinson-Foulds (RF), una métrica estándar que cuantifica la diferencia topológica entre dos árboles. El valor RF mide el número de particiones (biparticiones) presentes en un árbol y ausentes en el otro, y viceversa. Un valor más bajo indica mayor similitud entre el árbol estimado y el árbol de referencia ("verdad biológica"). Para facilitar la comparación, los valores RF se han normalizado (NRF) dividiendo por el máximo posible para cada caso.<br>
-
-Referencia: D. Robinson & L. Foulds, "Comparison of phylogenetic trees", Mathematical Biosciences, 53(1-2):131-147, 1981.
-
-<details>
-<summary><b>ℹ️ Nota sobre resultados paralelos</b></summary>
-Además de los resultados secuenciales mostrados, se han obtenido resultados en modo paralelo (multi-hilo) para evaluar la escalabilidad y eficiencia computacional de los métodos. Estos resultados no se incluyen aquí por motivos de espacio, pero están disponibles bajo petición o en los anexos del trabajo.
-</details>
 
 
 
